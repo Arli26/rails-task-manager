@@ -1,0 +1,10 @@
+<h1><%= @task.title %></h1> <a href="<%= edit_path %>">Edit task</a>
+<div style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; margin-top: 10px; width: 300px">
+  <p><strong><%= @task.details %></strong></p>
+  <p>
+  </div>
+    <input type="checkbox" <%= 'checked' if @task.completed %> disabled />
+    <strong><%= @task.completed ? "La tâche est complétée ✅" : "La tâche n'est pas complétée ❌" %></strong>
+  </p>
+
+<a href="<%= tasks_path %>">Back to list</a>
